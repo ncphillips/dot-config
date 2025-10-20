@@ -1,0 +1,51 @@
+{
+
+  /**
+   * Modules Organization
+   */
+  "modules-left": [
+
+  ],
+
+  "modules-center": [
+    "hyprland/workspaces"
+  ],
+  "modules-right": [
+    "network",
+    "battery",
+    "clock#date",
+    "clock#time"
+  ],
+
+
+  /**
+   * Modules: Battery
+   */
+  "battery": {
+    "format": "{capacity}% {icon}",
+    "format-icons": [" ", " ", " ", " ", " "]
+  },
+
+  /**
+   * Modules: Clock
+   */
+   "clock#date": {
+     "format": "{:%a %b %d}",
+     "format-alt": "{:%Y/%m/%d }",
+     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+   },
+  "clock#time": {
+    "format": "{:%I:%M %p}"
+  },
+
+  /**
+   * Modules: Network
+   */
+   "network": {
+     "interface": "wlan0",
+     "format-wifi": " ",
+     "format-disconnected": " ",
+     "tooltip-format": "{essid} - ({signalStrength}%)",
+     "tooltip-format-disconnected": "Disconnected"
+   }
+}
